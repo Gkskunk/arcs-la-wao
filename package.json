@@ -1,0 +1,7 @@
+{
+  "name":"arcs-la-wao","version":"0.1.0","private":true,"type":"module",
+  "engines":{"node":">=22 <23"},
+  "scripts":{"dev":"ARCS_DEMO_MODE=true tsx server/index.ts","start":"tsx server/index.ts","build":"tsc --noEmit && vite build","check":"tsc --noEmit","test":"node --import tsx --test tests/*.test.ts","test:browser":"node tests/browser.cjs","render:origin-story":"node story-studio/arcs-origin-story/render-origin-story-30s.mjs"},
+  "dependencies":{"express":"5.0.1","better-sqlite3":"11.7.0","zod":"3.24.2"},
+  "devDependencies":{"@types/express":"5.0.0","@types/better-sqlite3":"7.6.12","@types/node":"20.19.27","typescript":"5.6.3","tsx":"4.20.5","vite":"7.3.0","playwright":"1.56.1"}
+}
